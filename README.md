@@ -7,3 +7,5 @@ Esse quiz tem o objetivo de ser um teste vocacional na área de informática. É
 Projeto apresentado com sucesso na feira de inovação da Fametro - InovaTec 2022. 
 
 Acompanhe mais pelo meu Linkedin.
+
+Esse é o lugar do BeB
