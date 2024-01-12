@@ -1,3 +1,3 @@
 # Bits and Bytes - Quiz Tech
 
-Esse é o lugar do BeB
+Aqui estarei colaborando com o @Braz para desenvolver e implementar o Bits and Bytes, o nível 2 do Programados.
