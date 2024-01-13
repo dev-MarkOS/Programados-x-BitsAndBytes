@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+  background-color: #19747E;
+  font-family: 'Outfit', sans-serif;
+} 
+
+  /*IDS & CLasses*/
+
+  main {
+    margin-top: 6%;
+  }
+
+  header{
+    background-color: #D1E8E2;
+    font-family: 'Outfit', sans-serif;
+  }
+  .center, header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem;
+  }
+
+  .list-style{
+    list-style: square inside;
+  }
+
+  #beb{
+    font-family: 'Titan One', sans-serif;
+  }
+
+
+  /*Navbar custom hover*/
+      .navbar-custom .navbar-nav .nav-link:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-decoration: underline;
+      text-decoration-thickness: 0.15em;
+    }
+  
