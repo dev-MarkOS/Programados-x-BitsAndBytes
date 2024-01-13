@@ -1,28 +1,13 @@
-body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Outfit', sans-serif;
-}
-
 header>h1 {
     font-size: 8vh;
     letter-spacing: 0.7rem;
-    color: #fafafa;
     font-family: 'Outfit', sans-serif;
-    text-shadow: 0 7px rgb(61, 61, 61);
     margin: 0;
 }
 
 header>p {
     margin-top: 0px;
     font-size: 2vh;
-}
-
-header{
-    width:100%;
 }
 
 main {
@@ -34,19 +19,59 @@ main {
     align-items: center;
 }
 
+button {
+    color: aliceblue; /*Texto início*/
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 4vh;
+    border: 2px solid aliceblue;
+    box-shadow: 0 0.5rem aliceblue;
+    border-radius: 10px;    
+    background-color: #ff85ab;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.726); /*Cor do hover*/
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+
+footer {
+    width: 60vw;
+    height: 12vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Estilização div e classes*/
+
 .main-header {
     height: 30%;
     width: 100%;
-    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-    border: 2px solid black;
-    border-radius: 5px;
+    background:#ff85ab;
+    background:#ff85ab;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .main-header>h2 {
-    color: #ffffff;
+    color: aliceblue;
     font-family: 'Mali', cursive;
     font-size: 2.5rem;
 }
@@ -68,60 +93,25 @@ main {
 .main-content>h1 {
     font-family: 'Barlow', cursive;
     font-weight: bold;
-    text-shadow: 0 6px #3d3d3d;
-    color: #c7c2c2;
+    text-shadow: 0 4px aliceblue;
+    color: #ff85ab;  /*Pontuação números*/
     font-size: 5vh;
     letter-spacing: 0.7rem;
     margin: 0;
 }
 
-button {
-    color: white;
-    height: 100px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-family: 'Barlow', sans-serif;
-    font-size: 4vh;
-    box-shadow: 0 0.5rem rgb(0, 0, 0);
-    border-radius: 10px;
-    background-color: #c7c2c2;
-}
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.726);
-    transform: scale(1.02);
-    transition: transform 100ms;
-}
-
-footer {
-    width: 60vw;
-    height: 12vh;
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-footer>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 .main-courses {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    color: #444;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .main-courses>div {
-    background-color: rgba(61, 61, 61, 0.5);
-    color: white;
+    background-color: rgba(61, 61, 61, 0.5); /*Cor da caixa do resultados do curso*/
+    color: aliceblue; /*Cor do texto*/
     display: flex;
     flex-direction: column;
     justify-content: center;
