@@ -15,7 +15,7 @@ body {
 
 
 body,html{
-  background-color: 	#772f92;
+  background-color: 	#19747E;
 
 } 
 
@@ -29,10 +29,12 @@ main {
 }
 
   header{
-    background-color: #e7e6e6; /* Header cor*/
+    background-color: #D1E8E2; /* Header cor*/
     font-family: 'Outfit', sans-serif;
     font-weight: bolder;
     width:100%;
+    height: 4rem;
+    position: fixed;
   }
 
   /*IDS & CLasses*/
@@ -101,4 +103,10 @@ main {
       .navbar-toggler:hover .navbar-toggler-icon {
           background-color: #0056b3;
       }
+  }
+
+
+  .logo{
+    width: 4rem;
+    height: 4rem;
   }

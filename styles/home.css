@@ -16,7 +16,7 @@ header>p {
     height: 30%;
     width: 100%;
     background:#ff85ab;
-    border: 2px solid aliceblue;
+    border: 3px solid rgb(40, 230, 33);
     border-radius: 10px;
     display: flex;
     align-items: center;

@@ -15,7 +15,7 @@ header>p {
     height: 30%;
     width: 100%;
     background:#ff85ab;
-    border: 2px solid aliceblue;
+    border: 3px solid rgb(40, 230, 33);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ button {
     font-family: 'Barlow', sans-serif;
     font-size: 3vh;
     border: 2px solid aliceblue;
-    box-shadow: 0 0.5rem aliceblue;
+    border: 3px solid rgb(40, 230, 33);
     border-radius: 10px;
     background-color: #ff85ab;
 }
