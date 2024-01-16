@@ -1,12 +1,12 @@
+/*Estilizações gerais*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #8a8888; /*Cor do texto*/
 }
 
 body {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,6 @@ body {
 
 body,html{
   background-color: 	#19747E;
-
 } 
 
 main {
@@ -28,17 +27,85 @@ main {
     align-items: center;
 }
 
-  header{
+header{
     background-color: #D1E8E2; /* Header cor*/
     font-family: 'Outfit', sans-serif;
     font-weight: bolder;
     width:100%;
-    height: 4rem;
+    height: 3rem; /*Tamanho do header*/
     position: fixed;
+}
+
+
+/*Btns*/
+button,
+  button:focus {
+    outline: none;
+    box-shadow: none;
   }
 
-  /*IDS & CLasses*/
+.btn-sample {
+  background-color: #19747E;
+  height: 70px;
+  margin-top: 1rem;
+  width: 15rem;
+  border: none;
+  outline: none;
+  font-size: 4vh;
+  font-weight: bolder;
+  border-radius: 1rem;
+  color: aliceblue; /*Iniciar Cor*/
+  transition: background-color 0.3s;
+}
 
+.btn-sample:hover,
+.btn-sample:focus,
+.btn-sample:active {
+  background-color: #D1E8E2; /*Hover do iniciar*/
+}
+
+.btn-sample:active {
+  background-image: none;
+}
+
+.btn-sample.disabled,
+.btn-sample[disabled],
+fieldset[disabled] .btn-sample,
+.btn-sample.disabled:hover,
+.btn-sample[disabled]:hover,
+fieldset[disabled] .btn-sample:hover,
+.btn-sample.disabled:focus,
+.btn-sample[disabled]:focus,
+fieldset[disabled] .btn-sample:focus,
+.btn-sample.disabled:active,
+.btn-sample[disabled]:active,
+fieldset[disabled] .btn-sample:active,
+.btn-sample.disabled.active,
+.btn-sample[disabled].active,
+fieldset[disabled] .btn-sample.active {
+  background-color: #D1E8E2;
+  border-color: #D1E8E2;
+}
+
+.btn-sample .badge {
+  background-color: #ffffff;
+}
+
+/* Adiciona uma transição de cor para as letras do botão */
+.btn-sample {
+  transition: color 0.3s;
+}
+  
+/* Muda a cor do texto para preto quando o mouse passa por cima */
+  .btn-sample:hover {
+    color: #444C4C;
+  }
+
+/*IDS & CLasses*/
+  .logo{
+    width: 4rem;
+    height: 4rem;
+  }
   .center, header{
     display: flex;
     justify-content: center;
@@ -66,47 +133,63 @@ main {
     list-style: square inside;
   }
 
-  /*Navbar custom hover*/
-      .navbar-custom .navbar-nav .nav-link:hover {
-      text-decoration: underline;
-      text-decoration-thickness: 0.15em;
-    }
-  
-    .text-dec{
-      color: aliceblue; /*Cor do texto*/
-    }
 
-    /*Responsividade mobile*/
-    @media only screen and (max-width: 768px) {
-      .navbar-toggler {
-          display: block;
-      }
-  
-      .navbar-collapse {
-          display: none;
-      }
-  
-      .navbar-nav {
-          text-align: center;
-          margin-top: 10px;
-      }
-  
-      .navbar-nav .nav-item {
-          display: block;
-          margin-bottom: 10px;
-      }
-  
-      .navbar-toggler-icon {
-          background-color: #007bff;
-      }
-  
-      .navbar-toggler:hover .navbar-toggler-icon {
-          background-color: #0056b3;
-      }
+/*Navbar custom hover*/
+  .navbar-custom .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    color: #444C4C; /*Cor das palavras do menu*/
   }
 
 
-  .logo{
-    width: 4rem;
-    height: 4rem;
+/*Responsividade mobile*/
+  @media only screen and (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #007bff;
+    }
+  
+    .navbar-toggler:hover .navbar-toggler-icon {
+      background-color: #0056b3;
+    }
+  }
+
+
+
+/*Menus*/
+  .header-content{
+    height: 30%;
+    width: 100%;
+    background:#D1E8E2;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content>h2 {
+    color: #444C4C;
+    font-family: 'Mali', cursive;
+    font-size: 2.5rem; 
   }

@@ -3,69 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>BitsAndBytes</title>
+
   <!-- Bootstrap CSS CDN & Links -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/end.css">
-  <script src="scripts/scripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header> 
     <nav class="navbar navbar-expand-md navbar-light navbar-custom ">
-      <a class="navbar-brand" href="index.html">B&B</a>
+      <a class="navbar-brand" href="index.html"> <img class="logo" src="images/logo2.svg" alt="Logo"> </a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       </button>
+        
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.html">Início Teste</a>
+            <a class="nav-link" href="home.html">Teste</a>
           </li>
+              
           <li class="nav-item">
-            <a class="nav-link" href="explorar.html">Explorar</a>
+            <a class="nav-link" href="#.html">Explorar</a>
           </li>
+              
           <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="end.html">Resultado</a>
           </li>
+              
         </ul>
       </div>
     </nav>
-</header>
+  </header>
 
     <main>
-        <div class="main-header">
+        <div class="header-content">
             <h2 class="header-result"></h2>
         </div>
+        
         <div class="main-content">
-            <h2 class="text-dec">Pontuação final:</h2>
-            <h1 class="main-score"></h1>
-            <h2 class="text-dec">Cursos recomendados:</h2>
-            <div class="main-courses">
-                <div class="texts">
-                    <h5>Engenharia da Computação</h5>
-                    <p>O profissional formado em Engenharia da Computação é capaz de projetar e construir hardware e
-                        software (10 períodos).</p>
-                </div>
-
-                <div class="texts">
-                    <h5>Sistema de Informação</h5>
-                    <p>O Curso de Graduação de Sistemas de Informação é o conjunto de atividades teóricas e práticas que
-                        levam ao aprimoramento
-                        dos conteúdos, tendo em vista o background massivo adquirido antes da imersão no mercado de
-                        trabalho (8 períodos).</p>
-                </div>
-
-                <div class="texts">
-                    <h5 class="ads">Análise e Desenvolvimento de Sistemas</h5>
-                    <p>O Curso Superior de Tecnologia em ADS é o desenvolvido de
-                        práticas que levam ao
-                        aprimoramento dos conteúdos do meio da programação lhe capacitando de forma instantânea para o
-                        mercado de trabalho (5 períodos).</p>
-                </div>
+          <h2 class="text-dec">Pontuação final:</h2>
+          <h1 class="main-score"></h1>  
+          <h2 class="text-dec">Cursos recomendados:</h2>
+            
+          <div class="main-courses">
+            <div class="texts">
+              <h5>Engenharia da Computação</h5>
+              <p>
+                O profissional formado em Engenharia da Computação é capaz de projetar e construir hardware e software (10 períodos).
+              </p>
             </div>
-            <button onclick="window.location.href='index.html'">Voltar para o Início</button>
+
+            <div class="texts">
+              <h5>Sistema de Informação</h5>
+              <p>
+                O Curso de Graduação de Sistemas de Informação é o conjunto de atividades teóricas e práticas que levam ao aprimoramento dos conteúdos, tendo em vista o background massivo adquirido antes da imersão no mercado de trabalho (8 períodos).
+              </p>
+            </div>
+
+            <div class="texts">
+              <h5 class="ads">Análise e Desenvolvimento de Sistemas</h5>
+              <p>
+                O Curso Superior de Tecnologia em ADS é o desenvolvido de práticas que levam ao aprimoramento dos conteúdos do meio da programação lhe capacitando de forma instantânea para o mercado de trabalho (5 períodos).
+              </p>
+            </div>
+          </div>
+          <button class="btn-end" onclick="window.location.href='index.html'">Voltar para o Início</button>
         </div>
     </main>
     <script src="scripts/end.js"></script>

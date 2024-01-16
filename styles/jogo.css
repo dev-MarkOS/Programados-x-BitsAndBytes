@@ -1,42 +1,10 @@
-header>h1 {
-    font-size: 8vh;
-    letter-spacing: 0.7rem;
-    color: #FF008F;
+header{
+    background-color: #D1E8E2; /* Header cor*/
     font-family: 'Outfit', sans-serif;
-    margin: 0;
-}
-
-header>p {
-    margin-top: 0px;
-    font-size: 2vh;
-}
-
-.main-header {
-    height: 30%;
-    width: 100%;
-    background:#ff85ab;
-    border: 3px solid rgb(40, 230, 33);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-header>h2 {
-    color: aliceblue;
-    font-family: 'Mali', cursive;
-    font-size: 2.0rem;
-}
-
-.main-content {
-    width: 100%;
-    height: 70%;
-    margin-top: 20px;
-}
-
-.header-question {
-    margin-left: 10px;
-    margin-right: 10px;
+    font-weight: bolder;
+    width:100%;
+    height: 4rem;
+    position: fixed;
 }
 
 button {

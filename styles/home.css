@@ -1,41 +1,3 @@
-header>h1 {
-    font-size: 8vh;
-    letter-spacing: 0.7rem;
-    color: #ffffff;
-    font-family: 'Outfit', sans-serif;
-    margin: 0;
-}
-
-header>p {
-    margin-top: 0px;
-    font-size: 2vh;
-}
-
-/*Caixa principal*/
-.main-header { 
-    height: 30%;
-    width: 100%;
-    background:#ff85ab;
-    border: 3px solid rgb(40, 230, 33);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-header>h2 {
-    color: aliceblue; /* Cor do texto da caixa principal*/
-    font-family: 'Caprasimo', serif;
-    font-family: 'Titan One', sans-serif;
-    font-size: 2.5rem;
-}
-
-.main-content {
-    width: 100%;
-    height: 70%;
-    margin-top: 20px;
-}
-
 button {
     height: 100px;
     margin-bottom: 10px;
@@ -45,7 +7,8 @@ button {
     border: 2px solid aliceblue;
     box-shadow: 0 0.5rem aliceblue;
     border-radius: 10px;
-    background-color: #ff85ab;
+    background-color: #ffffff;
+    color: aliceblue; /*Cor do texto*/
 }
 
 button:hover {

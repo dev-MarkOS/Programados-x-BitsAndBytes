@@ -1,3 +1,8 @@
+/*Estilos gerais*/
+*{
+    color:#444C4C; /*Cor do texto*/
+}
+
 header>h1 {
     font-size: 8vh;
     letter-spacing: 0.7rem;
@@ -19,25 +24,6 @@ main {
     align-items: center;
 }
 
-button {
-    color: aliceblue; /*Texto início*/
-    height: 100px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-family: 'Barlow', sans-serif;
-    font-size: 4vh;
-    border: 2px solid aliceblue;
-    box-shadow: 0 0.5rem aliceblue;
-    border-radius: 10px;    
-    background-color: #ff85ab;
-}
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.726); /*Cor do hover*/
-    transform: scale(1.02);
-    transition: transform 100ms;
-}
 
 footer {
     width: 60vw;
@@ -57,11 +43,70 @@ footer>div {
 
 
 /*Estilização div e classes*/
+.main-content {
+    width: 100%;
+    height: 30%;
+    margin: 3rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content>h1 {
+    font-family: 'Barlow', cursive;
+    font-weight: bold;
+    text-shadow: 0 7px #444C4C;
+    color: #D1E8E2;  /*Pontuação números*/
+    font-size: 5vh;
+    letter-spacing: 0.4rem;
+    margin: 20px;  
+}
+
+.main-content>h2 {
+    margin: -12px; /*posição das caixas*/
+}
+
+
+.main-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 6rem; /*Posição do btn inicio*/
+}
+
+/*Caixas de recomendações*/
+.main-courses>div {
+    background-color: #D1E8E2; /*Cor da caixa do resultados do curso*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 170px;
+    padding: 10px;
+    margin: 35px; /*Espaço entre o topo das caixas*/        
+}
+
+.texts{
+    font-size: 11.5px;
+}
+
+.text-dec{
+    color: aliceblue;
+    
+}
+.ads{
+    padding: 0;
+    margin-top: 1rem;
+}
+
+/******************************************/
 
 .main-header {
     height: 30%;
     width: 100%;
-    background:#ff85ab;
     background:#ff85ab;
     border: 2px solid aliceblue;
     border-radius: 10px;
@@ -76,51 +121,6 @@ footer>div {
     font-size: 2.5rem;
 }
 
-.main-content {
-    width: 100%;
-    height: 70%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-content>h2 {
-    margin-top: 10px;
-}
-
-.main-content>h1 {
-    font-family: 'Barlow', cursive;
-    font-weight: bold;
-    text-shadow: 0 4px aliceblue;
-    color: #ff85ab;  /*Pontuação números*/
-    font-size: 5vh;
-    letter-spacing: 0.7rem;
-    margin: 0;
-}
-
-
-.main-courses {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.main-courses>div {
-    background-color: rgba(61, 61, 61, 0.5); /*Cor da caixa do resultados do curso*/
-    color: aliceblue; /*Cor do texto*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 170px;
-    padding: 10px;
-}
-
 .texts{
     margin-top: 0;
     margin-bottom: 0;
@@ -130,3 +130,67 @@ footer>div {
     padding: 0;
     margin-top: 1rem;
 }
+
+/*Btns*/
+button,
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.btn-end {
+  background-color: #19747E;
+  height: 30%;
+  width: 23%;
+  border: none;
+  outline: none;
+  font-size: 3vh;
+  font-weight: bolder;
+  border-radius: 1rem;
+  color: aliceblue; /*Iniciar Cor*/
+  transition: background-color 0.3s;
+}
+
+.btn-end:hover,
+.btn-end:focus,
+.btn-end:active {
+  background-color: #D1E8E2; /*Hover do iniciar*/
+}
+
+.btn-end:active {
+  background-image: none;
+}
+
+.btn-end.disabled,
+.btn-end[disabled],
+fieldset[disabled] .btn-end,
+.btn-end.disabled:hover,
+.btn-end[disabled]:hover,
+fieldset[disabled] .btn-end:hover,
+.btn-end.disabled:focus,
+.btn-end[disabled]:focus,
+fieldset[disabled] .btn-end:focus,
+.btn-end.disabled:active,
+.btn-end[disabled]:active,
+fieldset[disabled] .btn-end:active,
+.btn-end.disabled.active,
+.btn-end[disabled].active,
+fieldset[disabled] .btn-end.active {
+  background-color: #D1E8E2;
+  border-color: #D1E8E2;
+}
+
+.btn-end .badge {
+  background-color: #ffffff;
+}
+
+/* Adiciona uma transição de cor para as letras do botão */
+.btn-end {
+    transition: color 0.3s;
+  }
+    
+  /* Muda a cor do texto para preto quando o mouse passa por cima */
+    .btn-end:hover {
+      color: #444C4C;
+    }
+  
