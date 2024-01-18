@@ -5,14 +5,17 @@ const mostRecentScore = localStorage.getItem("mostRecentScore")
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 const getMensagem = (score) => {
-    if (score >= 600) {
-        return "Você tem bastante afinidade para a computação."
+    if (score >= 33 && score <= 40) {
+        return "Sua recomendação é: Desenvolvimento de Software e aplicativos"
     }
-    if (score >= 300) {
-        return "Você tem afinidade para a computação."
+    if (score >= 25 && score <= 32) {
+        return "Sua recomendação é: Engenharia de Hardware"
     }
-    if (score < 300) {
-        return "Você não tem afinidade para a computação"
+    if (score >= 16 && score <= 24) {
+        return "Sua recomendação é: Administração de Sistemas e Redes"
+    }
+    if (score >= 10 && score <= 15) {
+        return "Sua recomendação é: Análise de Dados"
     }
     return "O Quiz B&B estava mimindo, tente novamente!"
 }
