@@ -1,8 +1,7 @@
 const question = document.querySelector('.header-question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
+const choices = Array.from(document.querySelectorAll('.btn-game'));
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const MAX_QUESTIONS = 9
 
 let score = 0;
 let availableQuestions = []
@@ -12,93 +11,183 @@ let questionCounter = 0
 
 let questions = [
     {
-        title: "Em qual área da tecnologia você gostaria ou você tem interesse de trabalhar ?",
+        title: "Quando se depara com um problema, você prefere:",
         choicesQuestion: [
-            { option: "Produtos e invenções tecnológicas", score: 100 },
-            { option: "Facilidade de segmentar e automizar dados, pessoas e processos", score: 100 },
-            { option: "Soluções para o nosso dia a dia", score: 50 },
-            { option: "Não tenho interesse nessa área", score: 0 }
+            { option: "Encontrar soluções práticas imediatas ", score: 3 },
+            { option: "Investigar a fundo a causa do problema", score: 2 },
+            { option: "Escrever código para resolver o problema", score: 4 },
+            { option: "Analisar dados para tomar decisões", score: 1 }
         ],
     },
     {
-        title: "O que você gosta de fazer no seu tempo livre ?",
+        title: "Qual destas áreas você acha mais fascinante:",
         choicesQuestion: [
-            { option: "Estudar", score: 100 },
-            { option: "Ler", score: 50 },
-            { option: "Ficar no computador", score: 25 },
-            { option: "Dormir", score: 0 }
+            { option: "Redes e Sistemas", score: 2 },
+            { option: "Desenvolvimento de Hardware", score: 3 },
+            { option: "Desenvolvimento de Software", score: 4 },
+            { option: "Análise de Dados", score: 1 }
         ],
     },
     {
-        title: "Você está em um projeto e se depara com alguma dificuldade, você:",
+        title: "Seu interesse está mais voltado para:",
         choicesQuestion: [
-            { option: "Analisa a situação e já traça modos de como resolvê-la", score: 100 },
-            { option: "Desiste por causa da dificuldade", score: 0 },
-            { option: "Procrastina o quanto pode para depois resolver", score: 25 },
-            { option: "Delego pra alguém mais capacitado", score: 50 }
+            { option: "Configuração de servidores e redes", score: 3 },
+            { option: "Arquitetura de computadores", score: 2 },
+            { option: "Linguagens de programação", score: 4 },
+            { option: "Estatísticas e modelagem de dados", score: 1 }
         ],
     },
     {
-        title: "Com relação a tecnologia, você costuma:",
+        title: "O que você prefere fazer em um projeto:",
         choicesQuestion: [
-            { option: "Estar sempre atualizado, buscando novos lançamentos e novidades", score: 100 },
-            { option: "De vez em quando procuro as novidades", score: 50 },
-            { option: "Só procura entender algo novo se necessário", score: 25 },
-            { option: "Não me interesso nas novidades e lançamentos novos", score: 0 }
+            { option: "Garantir que tudo esteja funcionando perfeitamente", score: 3 },
+            { option: "Projetar e construir a infraestrutura", score: 2 },
+            { option: "Programar e desenvolver novas funcionalidades", score: 4 },
+            { option: "Analisar dados para tomar decisões estratégicas", score: 1 }
         ],
     },
     {
-        title: "Você se considera alguém que se atenta muito mesmo aos pequenos detalhes ?",
+        title: "Qual destas habilidades você acha mais interessante:",
         choicesQuestion: [
-            { option: "Não, sou uma pessoa muito distraída", score: 0 },
-            { option: "Um pouco, raramente me preocupo com pequenos detalhes", score: 25 },
-            { option: "Na maioria das vezes me atento à todos os detalhes", score: 50 },
-            { option: "Não deixo passar, sempre me atento a todos os detalhes", score: 100 }
+            { option: "Habilidades técnicas de suporte", score: 3 },
+            { option: "Conhecimentos em eletrônica", score: 2 },
+            { option: "Programação em diversas linguagens", score: 4 },
+            { option: "Análise estatística e machine learning", score: 1 }
         ],
     },
     {
-        title: "Quando você estuda exatas. É fácil usar números, símbolos numéricos e fórmulas ?",
+        title: "Como você descreveria seu interesse em resolver problemas:",
         choicesQuestion: [
-            { option: "Não, acho muito díficil", score: 0 },
-            { option: "Não sou bom com as áreas de exatas, mas faço o melhor possível para passar nas provas.", score: 25 },
-            { option: "Sim, esforçando-me nos estudos", score: 50 },
-            { option: "Sim, aprendo rapidamente", score: 100 }
+            { option: "Prático e eficiente", score: 3 },
+            { option: "Metódico e detalhado", score: 2 },
+            { option: "Criativo e lógico", score: 4 },
+            { option: "Estratégico e analítico", score: 1 }
         ],
     },
     {
-        title: "Ao realizar um trabalho, projeto ou algo do tipo, você sente que pode melhorar o que já foi feito ?",
+        title: "Em qual destes ambientes você se sentiria mais confortável trabalhando:",
         choicesQuestion: [
-            { option: "Não, só faço o mínimo para não parecer algo mal feito", score: 0 },
-            { option: "Um pouco, há vezes que sinto que poderia fazer mais", score: 25 },
-            { option: "Sim, na maioria das vezes sinto que posso melhorar ainda mais", score: 50 },
-            { option: "Sempre, sempre estou ansioso por melhorar o que já foi feito ou o que será feito", score: 100 }
+            { option: "Em um data center", score: 3 },
+            { option: "Em um laboratório de hardware", score: 2 },
+            { option: "Em um escritório de desenvolvimento de software", score: 4 },
+            { option: "Em um ambiente focado em análise de dados", score: 1 }
         ],
     },
     {
-        title: "Você tem curiosidade em relação a como as coisas são feitas e tem interesse em fazer?",
+        title: "Ao encontrar um novo conceito técnico, como você prefere aprender sobre ele:",
         choicesQuestion: [
-            { option: "Sempre busco conhecer as coisas por trás das cortinas e aprender como fazer", score: 100 },
-            { option: "Gosto muito de ver como são feitas", score: 50 },
-            { option: "Já vi algumas vezes mas não tenho grande interesse", score: 25 },
-            { option: "Não gosto, minha atenção só é atraída pelo resultado", score: 0 }
+            { option: "Experimentando na prática", score: 3 },
+            { option: "Lendo manuais e documentação", score: 2 },
+            { option: "Assistindo a tutoriais em vídeo", score: 4 },
+            { option: "Participando de workshops e palestras", score: 1 }
         ],
     },
     {
-        title: "O quão centrado e organizado você é ?",
+        title: "O que você acha mais gratificante em um projeto:",
         choicesQuestion: [
-            { option: "Muito organizado", score: 100 },
-            { option: "Organizado para algumas coisas", score: 50 },
-            { option: "Pouco organizado", score: 25 },
-            { option: "Não sou organizado", score: 0 }
+            { option: "Ver a infraestrutura funcionando sem problemas", score: 3 },
+            { option: "Observar o hardware que você projetou em ação", score: 2 },
+            { option: "Ver o software que você desenvolveu em uso", score: 4 },
+            { option: "Obter insights valiosos a partir da análise de dados", score: 1 }
         ],
     },
     {
-        title: "Com relação à lógica, você:",
+        title: "Em um time de desenvolvimento, você preferiria ser responsável por:",
         choicesQuestion: [
-            { option: "Gosta de pensar bastante e procurar soluções para os problemas", score: 100 },
-            { option: "Pensa em soluções simples, mas não tão efetivas", score: 50 },
-            { option: "Pensa um pouco, mas logo desiste de procurar uma solução para o problema", score: 25 },
-            { option: "Nem tento", score: 0 }
+            { option: "Suporte técnico e manutenção", score: 3 },
+            { option: "Design e arquitetura de sistemas", score: 2 },
+            { option: "Desenvolvimento e programação", score: 4 },
+            { option: "Análise de dados e tomada de decisões estratégicas", score: 1 }
+        ],
+    },
+    {
+        title: "Ao se deparar com um novo conceito de programação, você prefere aprender através de:",
+        choicesQuestion: [
+            { option: "Tutoriais práticos e exemplos", score: 3 },
+            { option: "Livros e teoria", score: 2 },
+            { option: "Projetos práticos e codificação real", score: 4 },
+            { option: "Aplicações práticas em projetos de análise de dados", score: 1 }
+        ],
+    },
+    {
+        title: "Como você prefere colaborar em um projeto em equipe:",
+        choicesQuestion: [
+            { option: "Resolvendo problemas práticos do dia a dia", score: 2 },
+            { option: "Contribuindo para o design e planejamento", score: 3 },
+            { option: "Escrevendo código e desenvolvendo funcionalidades", score: 4 },
+            { option: "Analisando dados e fornecendo insights", score: 1 }
+        ],
+    },
+    {
+        title: "Em qual destas áreas você vê mais oportunidades de carreira:",
+        choicesQuestion: [
+            { option: "Administração de Redes", score: 3 },
+            { option: "Desenvolvimento de Sistemas Embarcados", score: 2 },
+            { option: "Desenvolvimento Web Full Stack", score: 4 },
+            { option: "Ciência de Dados e Análise Preditiva", score: 1 }
+        ],
+    },
+    {
+        title: "Quando enfrenta um desafio técnico, você prefere:",
+        choicesQuestion: [
+            { option: "Solucionar rapidamente para manter a operação", score: 3 },
+            { option: "Analisar a fundo para entender a causa raiz", score: 2 },
+            { option: "Escrever código para superar o desafio", score: 4 },
+            { option: "Coletar e analisar dados para compreender o problema", score: 1 }
+        ],
+    },
+    {
+        title: "Quando pensa em inovação, você imagina:",
+        choicesQuestion: [
+            { option: "Melhorias na infraestrutura existente", score: 3 },
+            { option: "Novos dispositivos e tecnologias de hardware", score: 2 },
+            { option: "Novas funcionalidades e experiências de software", score: 4 },
+            { option: "Insights e descobertas transformadoras a partir de dados", score: 1 }
+        ],
+    },
+    {
+        title: "Se pudesse escolher uma área para se aprofundar, seria em:",
+        choicesQuestion: [
+            { option: "Virtualização e Cloud Computing", score: 3 },
+            { option: "Projeto de Circuitos Eletrônicos", score: 2 },
+            { option: "Desenvolvimento de Aplicações Móveis", score: 4 },
+            { option: "Mineração de Dados e Big Data", score: 1 }
+        ],
+    },
+    {
+        title: "Ao lidar com um projeto, você prefere:",
+        choicesQuestion: [
+            { option: "Manter a infraestrutura estável e funcional", score: 3 },
+            { option: "Desenvolver novos dispositivos ou componentes", score: 2 },
+            { option: "Criar novas funcionalidades e melhorias de software", score: 4 },
+            { option: "Extrair insights valiosos a partir dos dados disponíveis", score: 1 }
+        ],
+    },
+    {
+        title: "Qual destes termos está mais alinhado com o seu interesse:",
+        choicesQuestion: [
+            { option: "Firewall e Segurança de Rede", score: 3 },
+            { option: "Arquitetura de Microprocessadores", score: 2 },
+            { option: "Desenvolvimento de Aplicações Mobile", score: 4 },
+            { option: "Ciência de Dados e Machine Learning", score: 1 }
+        ],
+    },
+    {
+        title: "Ao pensar em uma carreira a longo prazo, você se vê mais em:",
+        choicesQuestion: [
+            { option: "Administração de Sistemas e Redes", score: 3 },
+            { option: "Engenharia de Hardware", score: 2 },
+            { option: "Desenvolvimento de Software", score: 4 },
+            { option: "Ciência de Dados e Análise Preditiva", score: 1 }
+        ],
+    },
+    {
+        title: "Qual destes tópicos você acha mais interessante:",
+        choicesQuestion: [
+            { option: "Segurança da Informação", score: 3 },
+            { option: "Sistemas Embarcados e IoT", score: 2 },
+            { option: "Inteligência Artificial e Machine Learning", score: 4 },
+            { option: "Análise Estatística e Visualização de Dados", score: 1 }
         ],
     },
 ]
@@ -128,10 +217,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    //progressText.innerText = `Questão ${questionCounter} de ${MAX_QUESTIONS}`
-    //progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
-    /**Logica que define as questões */
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     console.log(availableQuestions)
     const { title, choicesQuestion } = availableQuestions[questionsIndex]

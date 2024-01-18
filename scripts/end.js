@@ -14,7 +14,7 @@ const getMensagem = (score) => {
     if (score < 300) {
         return "Você não tem afinidade para a computação"
     }
-    return "Você"
+    return "O Quiz B&B estava mimindo, tente novamente!"
 }
 
 finalScore.innerText = mostRecentScore

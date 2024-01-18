@@ -1,44 +1,52 @@
-header{
-    background-color: #D1E8E2; /* Header cor*/
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    width:100%;
-    height: 4rem;
-    position: fixed;
+/*Estilização div e classes*/
+
+body {
+    margin: 0;
+    height: 100vh; /* Defina a altura da caixa de acordo com a necessidade */
 }
 
-button {
-    color: aliceblue;
-    height: 100px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-family: 'Barlow', sans-serif;
-    font-size: 3vh;
-    border: 2px solid aliceblue;
-    border: 3px solid rgb(40, 230, 33);
-    border-radius: 10px;
-    background-color: #ff85ab;
-}
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.726);
-    transform: scale(1.02);
-    transition: transform 100ms;
-}
-
-footer {
-    width: 60vw;
-    height: 12vh;
-    background: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-footer>div {
+.main-content {
+    height: 60%;
+    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.main-content{
+    margin: 1.5rem; /*posição das caixas*/
+}
+
+.header-question {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15%;
+    text-align: center; /* Centralizar o texto dentro de cada parágrafo */
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/*Btns*/
+button,
+  button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-game { /*Respostas*/
+  background-color: #D1E8E2;
+  width: 60rem;
+  height: 5rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  font-size: 3vh;
+  border-radius: 1rem;
+  color: #444C4C; /*Iniciar Cor*/
+  transition: background-color 0.3s;
 }

@@ -20,7 +20,7 @@ body,html{
 
 main {
     margin-top: 6%;
-    width: 60vw;
+    width: 70vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -179,13 +179,15 @@ fieldset[disabled] .btn-sample.active {
 /*Menus*/
   .header-content{
     height: 30%;
-    width: 100%;
+    width: 80%;
     background:#D1E8E2;
     border: 2px solid aliceblue;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
+    max-width: 120%; /* Garantir que o texto não ultrapasse a largura da caixa */
+    width: 100%;
   }
 
   .header-content>h2 {
