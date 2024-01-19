@@ -118,7 +118,7 @@ fieldset[disabled] .btn-sample.active {
   }
   
   .btns-dec{
-    margin-top: 4rem;
+    margin-top: 130px;
   }
 
   .texts{
@@ -194,4 +194,8 @@ fieldset[disabled] .btn-sample.active {
     color: #444C4C;
     font-family: 'Mali', cursive;
     font-size: 2.5rem; 
+  }
+
+  .quiz-img{
+    width: 70%;
   }
