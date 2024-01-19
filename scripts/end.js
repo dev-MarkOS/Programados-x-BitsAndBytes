@@ -11,10 +11,10 @@ const getMensagem = (score) => {
     if (score >= 25 && score <= 32) {
         return "Sua recomendação é: Engenharia de Hardware"
     }
-    if (score >= 16 && score <= 24) {
+    if (score >= 17 && score <= 24) {
         return "Sua recomendação é: Administração de Sistemas e Redes"
     }
-    if (score >= 10 && score <= 15) {
+    if (score >= 10 && score <= 16) {
         return "Sua recomendação é: Análise de Dados"
     }
     return "O Quiz B&B estava mimindo, tente novamente!"
