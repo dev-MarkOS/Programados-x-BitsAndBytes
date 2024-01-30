@@ -31,8 +31,8 @@ let questions = [
     {
         title: "Seu interesse está mais voltado para:",
         choicesQuestion: [
-            { option: "Configuração de servidores e redes", score: 3 },
-            { option: "Arquitetura de computadores", score: 2 },
+            { option: "Arquitetura de computadores", score: 3 },
+            { option: "Configuração de servidores e redes", score: 2 },
             { option: "Linguagens de programação", score: 4 },
             { option: "Estatísticas e modelagem de dados", score: 1 }
         ],
@@ -49,8 +49,8 @@ let questions = [
     {
         title: "Qual destas habilidades você acha mais interessante:",
         choicesQuestion: [
-            { option: "Habilidades técnicas de suporte", score: 3 },
-            { option: "Conhecimentos em eletrônica", score: 2 },
+            { option: "Conhecimentos em eletrônica", score: 3 },
+            { option: "Habilidades técnicas de suporte", score: 2 },
             { option: "Programação em diversas linguagens", score: 4 },
             { option: "Análise estatística e machine learning", score: 1 }
         ],
@@ -58,8 +58,8 @@ let questions = [
     {
         title: "Como você descreveria seu interesse em resolver problemas:",
         choicesQuestion: [
-            { option: "Prático e eficiente", score: 3 },
-            { option: "Metódico e detalhado", score: 2 },
+            { option: "Metódico e detalhado", score: 3 },
+            { option: "Prático e eficiente", score: 2 },
             { option: "Criativo e lógico", score: 4 },
             { option: "Estratégico e analítico", score: 1 }
         ],
@@ -67,8 +67,8 @@ let questions = [
     {
         title: "Em qual destes ambientes você se sentiria mais confortável trabalhando:",
         choicesQuestion: [
-            { option: "Em um data center", score: 3 },
-            { option: "Em um laboratório de hardware", score: 2 },
+            { option: "Em um laboratório de hardware", score: 3 },
+            { option: "Em um data center", score: 2 },
             { option: "Em um escritório de desenvolvimento de software", score: 4 },
             { option: "Em um ambiente focado em análise de dados", score: 1 }
         ],
@@ -76,8 +76,8 @@ let questions = [
     {
         title: "Ao encontrar um novo conceito técnico, como você prefere aprender sobre ele:",
         choicesQuestion: [
-            { option: "Experimentando na prática", score: 3 },
-            { option: "Lendo manuais e documentação", score: 2 },
+            { option: "Lendo manuais e documentação", score: 3 },
+            { option: "Experimentando na prática", score: 2 },
             { option: "Assistindo a tutoriais em vídeo", score: 4 },
             { option: "Participando de workshops e palestras", score: 1 } 
         ],
@@ -85,8 +85,8 @@ let questions = [
     {
         title: "O que você acha mais gratificante em um projeto:",
         choicesQuestion: [
-            { option: "Ver a infraestrutura funcionando sem problemas", score: 3 },
-            { option: "Observar o hardware que você projetou em ação", score: 2 },
+            { option: "Observar o hardware que você projetou em ação", score: 3 },
+            { option: "Ver a infraestrutura funcionando sem problemas", score: 2 },
             { option: "Ver o software que você desenvolveu em uso", score: 4 },
             { option: "Obter insights valiosos a partir da análise de dados", score: 1 }
         ],
@@ -103,8 +103,8 @@ let questions = [
     {
         title: "Ao se deparar com um novo conceito de programação, você prefere aprender através de:",
         choicesQuestion: [
-            { option: "Tutoriais práticos e exemplos", score: 3 },
-            { option: "Livros e teoria", score: 2 },
+            { option: "Livros e teoria", score: 3 },
+            { option: "Tutoriais práticos e exemplos", score: 2 },
             { option: "Projetos práticos e codificação real", score: 4 },
             { option: "Aplicações práticas em projetos de análise de dados", score: 1 }
         ],
@@ -121,8 +121,8 @@ let questions = [
     {
         title: "Em qual destas áreas você vê mais oportunidades de carreira:",
         choicesQuestion: [
-            { option: "Administração de Redes", score: 3 },
-            { option: "Desenvolvimento de Sistemas Embarcados", score: 2 },
+            { option: "Desenvolvimento de Sistemas Embarcados", score: 3 },
+            { option: "Administração de Redes", score: 2 },
             { option: "Desenvolvimento Web Full Stack", score: 4 },
             { option: "Ciência de Dados e Análise Preditiva", score: 1 }
         ],
@@ -130,8 +130,8 @@ let questions = [
     {
         title: "Quando enfrenta um desafio técnico, você prefere:",
         choicesQuestion: [
-            { option: "Solucionar rapidamente para manter a operação", score: 3 },
-            { option: "Analisar a fundo para entender a causa raiz", score: 2 },
+            { option: "Analisar a fundo para entender a causa raiz", score: 3 },
+            { option: "Solucionar rapidamente para manter a operação", score: 2 },
             { option: "Escrever código para superar o desafio", score: 4 },
             { option: "Coletar e analisar dados para compreender o problema", score: 1 }
         ],
@@ -139,8 +139,8 @@ let questions = [
     {
         title: "Quando pensa em inovação, você imagina:",
         choicesQuestion: [
-            { option: "Melhorias na infraestrutura existente", score: 3 },
-            { option: "Novos dispositivos e tecnologias de hardware", score: 2 },
+            { option: "Novos dispositivos e tecnologias de hardware", score: 3 },
+            { option: "Melhorias na infraestrutura existente", score: 2 },
             { option: "Novas funcionalidades e experiências de software", score: 4 },
             { option: "Insights e descobertas transformadoras a partir de dados", score: 1 }
         ],
@@ -148,8 +148,8 @@ let questions = [
     {
         title: "Se pudesse escolher uma área para se aprofundar, seria em:",
         choicesQuestion: [
-            { option: "Virtualização e Cloud Computing", score: 3 },
-            { option: "Projeto de Circuitos Eletrônicos", score: 2 },
+            { option: "Projeto de Circuitos Eletrônicos", score: 3 },
+            { option: "Virtualização e Cloud Computing", score: 2 },
             { option: "Desenvolvimento de Aplicações Móveis", score: 4 },
             { option: "Mineração de Dados e Big Data", score: 1 }
         ],
@@ -157,8 +157,8 @@ let questions = [
     {
         title: "Ao lidar com um projeto, você prefere:",
         choicesQuestion: [
-            { option: "Manter a infraestrutura estável e funcional", score: 3 },
-            { option: "Desenvolver novos dispositivos ou componentes", score: 2 },
+            { option: "Desenvolver novos dispositivos ou componentes", score: 3 },
+            { option: "Manter a infraestrutura estável e funcional", score: 2 },
             { option: "Criar novas funcionalidades e melhorias de software", score: 4 },
             { option: "Extrair insights valiosos a partir dos dados disponíveis", score: 1 }
         ],
@@ -166,8 +166,8 @@ let questions = [
     {
         title: "Qual destes termos está mais alinhado com o seu interesse:",
         choicesQuestion: [
-            { option: "Firewall e Segurança de Rede", score: 3 },
-            { option: "Arquitetura de Microprocessadores", score: 2 },
+            { option: "Arquitetura de Microprocessadores", score: 3 },
+            { option: "Firewall e Segurança de Rede", score: 2 },
             { option: "Desenvolvimento de Aplicações Mobile", score: 4 },
             { option: "Ciência de Dados e Machine Learning", score: 1 }
         ],
@@ -175,8 +175,8 @@ let questions = [
     {
         title: "Ao pensar em uma carreira a longo prazo, você se vê mais em:",
         choicesQuestion: [
-            { option: "Administração de Sistemas e Redes", score: 3 },
-            { option: "Engenharia de Hardware", score: 2 },
+            { option: "Engenharia de Hardware", score: 3 },
+            { option: "Administração de Sistemas e Redes", score: 2 },
             { option: "Desenvolvimento de Software", score: 4 },
             { option: "Ciência de Dados e Análise Preditiva", score: 1 }
         ],
@@ -184,8 +184,8 @@ let questions = [
     {
         title: "Qual destes tópicos você acha mais interessante:",
         choicesQuestion: [
-            { option: "Segurança da Informação", score: 3 },
-            { option: "Sistemas Embarcados e IoT", score: 2 },
+            { option: "Sistemas Embarcados e IoT", score: 3 },
+            { option: "Segurança da Informação", score: 2 },
             { option: "Inteligência Artificial e Machine Learning", score: 4 },
             { option: "Análise Estatística e Visualização de Dados", score: 1 }
         ],
