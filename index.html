@@ -19,6 +19,7 @@
         <a class="navbar-brand" href="index.html"> <img class="logo" src="images/logo2.svg" alt="Logo"> </a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
           
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,13 +29,8 @@
             </li>
                 
             <li class="nav-item">
-              <a class="nav-link" href="#.html">Explorar</a>
+              <a class="nav-link" onclick="resultadoValido()">Resultado</a>
             </li>
-                
-            <li class="nav-item">
-              <a class="nav-link" href="end.html">Resultado</a>
-            </li>
-                
           </ul>
         </div>
       </nav>
@@ -42,56 +38,32 @@
 
     <main>
       <div>
-        <h1 id="beb" class="center">
-          BitsAndBytes
-        </h1>
-
-        <h6 class="center">
-          Bem-vindo ao projeto "BitsAndBytes" &mdash; sua porta de entrada para explorar e aprimorar suas habilidades na vasta e dinâmica arena da tecnologia!
-        </h6>    
+        <img class="gif" src="images/BitesAndBytes.gif" alt="B&B Gif" width="640" height="360">
       </div>
       
       <!-- Texts about the project-->
       <div class="texts">
-        <h5>
-          O que é o BitsAndBytes?
-        </h5>
-        <p>
-          BitsAndBytes é mais do que apenas um teste; é uma jornada interativa e envolvente através do universo tecnológico. Concebido para avaliar suas habilidades em programação, segurança da informação, inteligência artificial, desenvolvimento web, e muito mais, o BitsAndBytes oferece uma oportunidade única para você demonstrar sua aptidão e descobrir áreas para aprimoramento. 
+        <h2 class="center">
+          B&B o que é?
+        </h2>
+        <p class="paragraphs">
+          É mais do que apenas um teste; é uma jornada interativa e envolvente através do universo tecnológico.<br> Concebido para avaliar suas habilidades em programação, segurança da informação, desenvolvimento web e mais,<br> Além de oferecer uma oportunidade única para você demonstrar sua aptidão e descobrir áreas para aprimoramento. 
         </p>
-      </div>
-
-      <div class="texts">
-        <h5>
-          O Teste
-        </h5>
-        <p>
-          Ao concluir o teste, você receberá uma avaliação abrangente, incluindo uma pontuação que reflete seu desempenho. Mas não é só isso! O BitsAndBytes vai além, oferecendo sugestões personalizadas de cursos e recursos que podem ajudá-lo a fortalecer áreas específicas onde você pode ter oportunidades de crescimento.
-        </p>
-      </div>
-
-      <div class="texts">
-        <h5>
-          Por que Participar
-        </h5>
-        <ul class="list-style">
-          <li>Avalie suas habilidades técnicas de maneira abrangente.</li>
-          <li>Identifique suas fortalezas e áreas de aprimoramento</li>
-          <li>Receba sugestões personalizadas de cursos para impulsionar seu desenvolvimento.</li>
-          <li>Participe de uma experiência educativa imersiva no mundo da tecnologia.</li>
-        </ul>
       </div>
   </main>
 
-  <aside class="center">
-    <a href="home.html "><button class="btn btn-dark mr-1 btns-dec" type="button">Teste</button> </a>
-    <a href="end.html "><button class="btn btn-dark mr-1 btns-dec" type="button">Resultados</button> </a>
-  </aside>
+  <footer class="btns">
+    <a href="home.html "> <button class="btn btn-light" type="button">Iniciar teste</button> </a>
+  </footer>
 
   <!-- Bootstrap JS CDN (Requer jQuery) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="scripts/jogo.js"></script>
+  <script src="scripts/end.js"></script>
+  <script src="scripts/notfound.js"></script>
 
   </body>
 </html>

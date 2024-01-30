@@ -1,9 +1,9 @@
-const question = document.querySelector('.header-question');
-const choices = Array.from(document.querySelectorAll('.btn-game'));
+const question = document.querySelector('.header-question')
+const choices = Array.from(document.querySelectorAll('.btn-game'))
 
 const MAX_QUESTIONS = 9
 
-let score = 0;
+let score = 0
 let availableQuestions = []
 let acceptingAnswers = true
 let currentQuestion = {}
@@ -79,7 +79,7 @@ let questions = [
             { option: "Experimentando na prática", score: 3 },
             { option: "Lendo manuais e documentação", score: 2 },
             { option: "Assistindo a tutoriais em vídeo", score: 4 },
-            { option: "Participando de workshops e palestras", score: 1 }
+            { option: "Participando de workshops e palestras", score: 1 } 
         ],
     },
     {
@@ -95,7 +95,7 @@ let questions = [
         title: "Em um time de desenvolvimento, você preferiria ser responsável por:",
         choicesQuestion: [
             { option: "Suporte técnico e manutenção", score: 3 },
-            { option: "Design e arquitetura de sistemas", score: 2 },
+            { option: "Design e arquitetura de sistemas", score: 2 }, 
             { option: "Desenvolvimento e programação", score: 4 },
             { option: "Análise de dados e tomada de decisões estratégicas", score: 1 }
         ],
@@ -213,7 +213,7 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score)
 
         window.location.href = 'end.html'
-        return;
+        return
     }
 
     questionCounter++

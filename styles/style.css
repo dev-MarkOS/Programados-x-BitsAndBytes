@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #8a8888; /*Cor do texto*/
+    color: aliceblue; /*Cor do texto*/
 }
 
 body {
@@ -101,6 +101,11 @@ fieldset[disabled] .btn-sample.active {
     color: #444C4C;
   }
 
+  .btns{
+    margin-top: 5rem;
+  }
+
+
 /*IDS & CLasses*/
   .logo{
     width: 4rem;
@@ -116,23 +121,10 @@ fieldset[disabled] .btn-sample.active {
     font-family: 'Titan One', sans-serif;
     margin-top: -50px;
   }
-  
-  .btns-dec{
-    margin-top: 130px;
-  }
-
-  .texts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 3rem;
-  }
 
   .list-style{
     list-style: square inside;
   }
-
 
 /*Navbar custom hover*/
   .navbar-custom .navbar-nav .nav-link:hover {
@@ -174,8 +166,6 @@ fieldset[disabled] .btn-sample.active {
     }
   }
 
-
-
 /*Menus*/
   .header-content{
     height: 30%;
@@ -196,6 +186,13 @@ fieldset[disabled] .btn-sample.active {
     font-size: 2.5rem; 
   }
 
-  .quiz-img{
-    width: 70%;
+  .gif{
+    border-radius: 2%;
+  }
+  
+  .texts{
+    margin-top: 80px;
+  }
+  .paragraphs{
+    font-size: large;
   }
