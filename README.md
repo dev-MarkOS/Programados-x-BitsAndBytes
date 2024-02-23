@@ -1,9 +1,25 @@
-# Programados - Quiz de Aptidão
+# Programados x BitsAndBytes
 
-Faça seu teste agora mesmo: https://programados.netlify.app
+Compare as versões: 
 
-Esse quiz tem o objetivo de ser um teste vocacional na área de informática. É um facilitador para quem está adentrando no mercado de trabalho.
+### Programados:
+https://programados.netlify.app
 
-Projeto apresentado com sucesso na feira de inovação da Fametro - InovaTec 2022. 
+### Bits and Bytes:
+https://bbquiztech.netlify.app/ 
 
+<br>
+Esse quiz tem o objetivo de ser um teste vocacional para a área tech. É um facilitador para quem está planejando adentrar no mercado de trabalho.
+
+<br>
+Programados foi apresentado na feira de inovação da Fametro - InovaTec 2022. 
+
+Bits and Bytes é uma adaptação independente e com objetivo de futuramente virar uma plataforma integrada ao projeto Skill.map.
+<br>
+
+### Colaboradores:
+
+@dev-MarkOS e @brxzjunior
+
+<br>
 Acompanhe mais pelo meu Linkedin.
