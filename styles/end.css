@@ -95,7 +95,6 @@ footer>div {
 
 .text-dec{
     color: aliceblue;
-    
 }
 .ads{
     padding: 0;
@@ -149,6 +148,7 @@ button,
   border-radius: 1rem;
   color: aliceblue; /*Iniciar Cor*/
   transition: background-color 0.3s;
+  margin-top: -90px;
 }
 
 .btn-end:hover,

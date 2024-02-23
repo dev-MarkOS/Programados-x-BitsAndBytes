@@ -16,7 +16,7 @@ const getMensagem = (score) => {
     if (score >= 10 && score <= 16) {
         return "Sua recomendação é: Análise de Dados"
     }
-    return "O Quiz B&B estava mimindo, tente novamente!"
+    return "Encontramos um erro, tente novamente!"
 }
 
 finalScore.innerText = mostRecentScore
