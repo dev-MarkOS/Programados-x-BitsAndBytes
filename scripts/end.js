@@ -16,7 +16,7 @@ const getMensagem = (score) => {
     if (score >= 10 && score <= 16) {
         return "Sua recomendação é: Análise de Dados"
     }
-    return "Encontramos um erro, tente novamente!"
+    return "Teste ainda não realizado!"
 }
 
 finalScore.innerText = mostRecentScore
